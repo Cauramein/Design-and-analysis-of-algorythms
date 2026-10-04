@@ -1,4 +1,9 @@
-package PACKAGE_NAME;
-
-public class IntList {
+public interface IntList {
+    void add(int x);
+    void add(int index, int x);
+    int remove(int index);
+    int get(int index);
+    boolean contains(int x);
+    int size();
+    void setOpCounter(OpCounter counter);
 }
